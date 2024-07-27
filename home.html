@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Munch Time!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    h1 {text-align: center;}
+    </style>
+</head>
+<body onload="autoPlay()">
+    <div id="third" style="display:none">
+        <h1 id="munchy">
+           Munchy
+        </h1>
+    </div>
+    <div id="intro" class = "centered">
+        <div id="rectangle">
+            <h1 id="startText" style="color: white;">Hey Pookie, Happy 6 Months!</h1>
+        </div>
+        <button id="startButton">Click Me</button>
+        <div class ="image-gallery">
+            <img src="images/1.JPG" class="intro-image" id="image1">
+            <img src="images/2.PNG" class="intro-image"id="image2">
+            <img src="images/3.JPG" class="intro-image" id="image3">
+            <img src="images/4.JPG" class="intro-image" id="image4">
+            <img src="images/5.jpg" class="intro-image" id="image5">
+            <img src="images/6.JPG" class="intro-image" id="image6">
+            <img src="images/7.jpg" class="intro-image" id="image7">
+            <img src="images/8.JPG" class="intro-image" id="image8">
+            <img src="images/minions.gif" class="intro-image" id="image9">
+            <img src="images/elprimo.gif" class="intro-image" id="image10">
+        </div>
+    </div>
+    <div id="second" style="display:none">
+        <h1 class = "spaced">
+            When you don't know what to eat sometimes
+            <br>
+            This will help!
+            <br>
+            I present...
+        </h1>
+    </div>
+    <div id="app" class="centered" style="display: none;">
+        <div id="option1" class="option" onclick="chooseOption(0)"></div>
+        <div id="option2" class="option" onclick="chooseOption(1)"></div>
+    </div>
+    <div id = "app2" style="display: none;">
+        <h1 class = "centered">Your Choices:</h1>
+    </div>
+    <script src="script.js"></script>
+    <audio id="music" src="images/cherrywine.mp3" autoplay="autoplay"></audio>
+    <audio id="fart" src="images/fart.mp3"></audio>
+    <audio id="boom" src="images/boom.mp3"></audio>
+    <audio id="horn" src="images/horn.mp3"></audio>
+</body>
+</html>
