@@ -149,4 +149,3 @@ document.getElementById('startButton').addEventListener('click', function() {
     }, 10000);
     
 });
-
