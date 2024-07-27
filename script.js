@@ -119,6 +119,8 @@ renderOptions();
 
 // Start Button
 document.getElementById('startButton').addEventListener('click', function() { 
+    const music = document.getElementById('music');
+    music.play();
     // Hide the intro and show the app when the start button is clicked
     document.getElementById('intro').style.display = 'none';
     document.getElementById('second').style.display = 'flex';
@@ -143,7 +145,6 @@ document.getElementById('startButton').addEventListener('click', function() {
     }, secondWaitTime);
 
     setTimeout(function() {
-        const music = document.getElementById('music');
         music.pause();
     }, 10000);
     
